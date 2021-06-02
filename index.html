@@ -13,70 +13,84 @@
 <body>
     <div class="container">
         <div class="navigation">
-            <ul>
-                <li>
-                    <a href="#">
+           
+                    <button >
                         <span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>
                         <span class="title"><h2>Tuti Motors</h2></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </button>
+               
+                    <button data-tab-target=".tab1" class= "active tabs__button">
                         <span class="icon"><i class="fa fa-home" aria-hidden="true"></i>
                         </span>
                         <span class="title">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </button>
+                
+                    <button data-tab-target=".tab2" class="tabs__button">
                         <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
                         <span class="title">Customers</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </button>
+                
+                    <button data-tab-target=".tab3" class="tabs__button">
                         <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                         <span class="title">Message</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </button>
+        
+                    <button data-tab-target=".tab4" class="tabs__button">
                         <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
                         <span class="title">Help</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </button>
+                
+                    <button data-tab-target=".tab5" class="tabs__button">
                         <span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
                         <span class="title">Settings</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </button>
+                
+                    <button data-tab-target=".tab6" class="tabs__button">
                         <span class="icon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
                         <span class="title">Password</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </button>
+               
+                    <button>
                         <span class="icon">
                             <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
 
                         </span>
                         <span class="title">Sign Out</span>
-                    </a>
-                </li>
-            </ul>
+                    </button>
+                
         </div>
         <div class="main">
             <div class="top-bar">
                 <div class="toggle" onclick="toggleMenu();">
+                    <span> <i class="fa fa-bars" aria-hidden="true"></i> </span>
                 </div>
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search here">
-                    </label>
+            </div>
+            <div class="tab-content">
+                <div class = 'active tab1' data-tab-content>
+                    <h2>Tab 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa fugiat cupiditate provident esse, facere iste! Reiciendis rem, corporis debitis consectetur eius eos dolorum tenetur quibusdam. Dignissimos molestiae debitis sapiente tempora aliquid voluptas provident fuga ipsa quisquam, repellat fugiat illum ea nisi, tempore aspernatur soluta neque explicabo velit! Molestias, velit.</p>
                 </div>
+                <div class = 'tab2' data-tab-content>
+                    <h2>Tab 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa fugiat cupiditate provident esse, facere iste! Reiciendis rem, corporis debitis consectetur eius eos dolorum tenetur quibusdam. Dignissimos molestiae debitis sapiente tempora aliquid voluptas provident fuga ipsa quisquam, repellat fugiat illum ea nisi, tempore aspernatur soluta neque explicabo velit! Molestias, velit.</p>
+                </div>
+                <div class = 'tab3' data-tab-content>
+                    <h2>Tab 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa fugiat cupiditate provident esse, facere iste! Reiciendis rem, corporis debitis consectetur eius eos dolorum tenetur quibusdam. Dignissimos molestiae debitis sapiente tempora aliquid voluptas provident fuga ipsa quisquam, repellat fugiat illum ea nisi, tempore aspernatur soluta neque explicabo velit! Molestias, velit.</p>
+                </div>
+                <div class = 'tab4' data-tab-content>
+                    <h2>Tab 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa fugiat cupiditate provident esse, facere iste! Reiciendis rem, corporis debitis consectetur eius eos dolorum tenetur quibusdam. Dignissimos molestiae debitis sapiente tempora aliquid voluptas provident fuga ipsa quisquam, repellat fugiat illum ea nisi, tempore aspernatur soluta neque explicabo velit! Molestias, velit.</p>
+                </div>
+                <div class = 'tab5' data-tab-content>
+                    <h2>Tab 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa fugiat cupiditate provident esse, facere iste! Reiciendis rem, corporis debitis consectetur eius eos dolorum tenetur quibusdam. Dignissimos molestiae debitis sapiente tempora aliquid voluptas provident fuga ipsa quisquam, repellat fugiat illum ea nisi, tempore aspernatur soluta neque explicabo velit! Molestias, velit.</p>
+                </div>
+                <div class = 'tab6' data-tab-content>
+                    <h2>Tab 6</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa fugiat cupiditate provident esse, facere iste! Reiciendis rem, corporis debitis consectetur eius eos dolorum tenetur quibusdam. Dignissimos molestiae debitis sapiente tempora aliquid voluptas provident fuga ipsa quisquam, repellat fugiat illum ea nisi, tempore aspernatur soluta neque explicabo velit! Molestias, velit.</p>
+                </div>
+
             </div>
            
         </div>
@@ -90,6 +104,26 @@
             let main = document.querySelector('.main');
             main.classList.toggle('active');
         }
+    </script>
+
+    <script>
+      const tabs = document.querySelectorAll('[data-tab-target]')
+      const tabContents = document.querySelectorAll('[data-tab-content]')
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active')
+        })
+        tabs.forEach(tab => {
+        tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        target.classList.add('active')
+        })
+       })
+
     </script>
 </body>
 </html>
